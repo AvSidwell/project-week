@@ -1,12 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EOM-Project</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <nav class="navbar fixed-top bg-body-tertiary border-bottom">
+        <ul class="nav">
+            <li class="nav-item" style="margin-right: 20px; height: 15px;">
+                <div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target=".menue-bar"
+                        aria-controls="menue-bar">Menu</button>
+
+                    <div class="offcanvas offcanvas-end menue-bar" tabindex="-1" aria-labelledby="menue-barLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="drop-align offcanvas-title" id="menue-barLabel">Head Of Contents</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="tbn btn btn-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">-HOME-</button>
+                            <ul class="tbn dropdown-menu">
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li class="drop-align">
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown mt-3">
+
+                            <button class="tbn btn btn-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">-ABOUT-</button>
+                            <ul class="tbn dropdown-menu">
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="tbn btn btn-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown">-CONTACT-</button>
+                            <ul class="tbn dropdown-menu">
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                                <li class="drop-align">
+                                    <a class="dropdown-item" href="#">A</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <li class="nav-item">
+                <a class="text-white bg-dark nav-link active navbar-brand" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-white bg-dark nav-link active navbar-brand" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-white bg-dark nav-link active navbar-brand" href="#">CONTACT</a>
+            </li>
+
+
+            </li>
+        </ul>
+        <div class="container text-right">
+            <!--<div class="row justify-contnent-end">
+                <div class="col md-2 offset-2">
+
+                    <form class="d-flex " role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search On Page" aria-label="Search">
+                        <button class="btn ">Button</button>
+                    </form>
+                </div>-->
+
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <img id="head-img1" class="img-fluid" src="./Assets/Images/1.avif" alt="">
+        </div>
+        <div class="border border-success p-2 mb-2 border-opacity-25">
+            <h1 class="drop-align head-text-name text-position display-2">More
+                <span class="animator1">About</span> Me
+            </h1>
+            <div class="text-bg-coloring">
+                <h1 class="drop-align text-white-50">A little about ME</h1>
+                <p class="drop-align text-light">Hi I'm and an aspireing developer and I was born in
+                    Cape Town and I am located in
+                    Delft.</br>
+                    My primary eduction I completed in Symphony Primary. I went on to high schoool and went
+                    to school </br> in Belhar High School and successfully completed my schooling there.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h2 class="head-animate-entry">Hi I'm </h2>
+                    <!-- <h2 class="animate_animated animate__bounce">hey</h2> -->
+                    <!--<h1 class="head-animate-1 animate__animated animate__fadeInLeft align-middle"><span
+                            style="margin-left: 15px">S</span><span style="margin-left: 15px">d</span> <span
+                            style="margin-left: 15px">e</span>l a y</h1>-->
+                    <h1
+                        class="head-animate-1 text-position display-2 animate__animated animate__fadeInLeft align-middle">
+                        Sidwell</h1>
+                </div>
+                <div class="col-1">
+                    <!--<h1 class="head-animate-2 animate__animated animate__fadeInRight align-middle"><span
+                            style="margin-left: 15px">i</span><span style="margin-left: 15px">w</span> <span
+                            style="margin-left: 15px">l</span><span style="margin-left: 15px">B</span><span
+                            style="margin-left: 15px">t</span><span style="margin-left: 15px">i</span></h1>-->
+                    <h1
+                        class="head-animate-2 text-position display-2 animate__animated animate__fadeInRight align-middle">
+                        Batyi</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="bar-flow row">
+            <h1 class="drop-align text-white-50 mb-4">My Projects</h1>
+            <div class="card-layout-f col-3 mb-3 mx-5">
+                <img class="cq1 img-thumbnail" src="./Assets/Images/4.png" alt="">
+                <div>
+                    <h1 class="text-position text-center display-7">Links</h1>
+                    <button class="tp-button btn btn-dark" type="button">GitHub </button>
+                    <button class="tp-button btn btn-dark" type="button">Netlify</button>
+                </div>
+            </div>
+            <div class="card-layout-f col-3 mb-3 mx-5">
+                <img class="cq1 img-thumbnail" src="./Assets/Images/4.png" alt="">
+                <div>
+                    <h1 class="text-position text-center display-7">Links</h1>
+                    <button class="tp-button btn btn-dark" type="button">GitHub </button>
+                    <button class="tp-button btn btn-dark" type="button">Netlify</button>
+                </div>
+            </div>
+            <div class="card-layout-f col-3 mb-3 mx-5">
+                <img class="cq1 img-thumbnail" src="./Assets/Images/4.png" alt="">
+                <div>
+                    <h1 class="text-position text-center display-7">Links</h1>
+                    <button class="tp-button btn btn-dark" type="button">GitHub </button>
+                    <button class="tp-button btn btn-dark" type="button">Netlify</button>
+                </div>
+            </div>
+            <div class="card-layout-f col-3 mb-3 mx-5">
+                <img class="cq1 img-thumbnail" src="./Assets/Images/4.png" alt="">
+                <div>
+                    <h1 class="text-position text-center display-7">Links</h1>
+                    <button class="tp-button btn btn-dark" type="button">GitHub </button>
+                    <button class="tp-button btn btn-dark" type="button">Netlify</button>
+                </div>
+            </div>
+            <div class="card-layout-f col-3 mb-3 mx-5">
+                <img class="cq1 img-thumbnail" src="./Assets/Images/4.png" alt="">
+                <div>
+                    <h1 class="text-position text-center display-7">Links</h1>
+                    <button class="tp-button btn btn-dark" type="button">GitHub </button>
+                    <button class="tp-button btn btn-dark" type="button">Netlify</button>
+                </div>
+            </div>
+            <div class="card-layout-f col-3 mb-3 mx-5">
+                <img class="cq1 img-thumbnail" src="./Assets/Images/4.png" alt="">
+                <div>
+                    <h1 class="text-position text-center display-7">Links</h1>
+                    <button class="tp-button btn btn-dark" type="button">GitHub </button>
+                    <button class="tp-button btn btn-dark" type="button">Netlify</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="text-start col-3">
+                    O
+                </div>
+                <div class="col-5">
+                    O
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="border border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h1 class="drop-align text-white-50 mb-4">ABOUT ME</h1>
+                    <p class="mx-auto p-2 align-middle text-center">My full name is <b>Sidwell Avuyile Batyi</b> An I am
+                        a
+                        very
+                        observant
+                        young lad, some might say I'm quiet
+                        </br> and some loud annd outgoing it all depends ron how much of me they know and but most
+                        importantly
+                        the relationship with me they have. I could say I'm efficient
+                        </br> but some can say lazy but just as I stated before <i>efficient</i> I like to get things
+                        done
+                        in
+                        the fastest and easiest way possible.
+                        </br> That is why I love <b>technology</b> as much as I do. Even though I am what I am, I work
+                        very
+                        hard
+                        in the things I am pasionet <b>About</b>
+                        </br>I tookup this path/road because I want to be part of the people that make the imposible
+                        possible.
+                    </p>
+                </div>
+                <div class="col-5 p-3 mb-2 bg-secondary text-white">
+                    <h1 class="text-center fw-bold fs-1 mx-auto p-2">My Card</h1>
+                    <div class="container text-center">
+                        <div class="rower-1 row">
+                            <div class="col flip-c">
+                                <div class=" flip-in">
+                                    <div class="col flip-f">
+                                        <img class="cq1 img-thumbnail"
+                                            src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+                                    </div>
+                                    <div class="flip-b">
+                                        <p class="info-center border border-black text-white">Date/Birth: 14/06/2004</p>
+                                        <p class="info-center border border-black text-white">Name: Sidwell Avuyile
+                                            Batyi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border border-bottom">
+        <h1 class="text-center text-white-50 mb-4">Testimonial</h1>
+        <div class="row">
+            <div class="test-pin col-1 border border-right p-0 my-2">
+                <img class="test-rows" src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+            </div>
+            <div class="test-pin col-5 border-left p-0 my-2">
+                <h1>Name of person</h1>
+                <p>Their test....</p>
+            </div>
+            <div class="test-pin col-1 border border-right p-0 my-2">
+                <img class="test-rows mx-auto" src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+            </div>
+            <div class="test-pin col-5 border-left p-0 my-2">
+                <h1>Name of person</h1>
+                <p>Their test....</p>
+            </div>
+            <div class="test-pin2 col-1 border border-right p-0 my-2">
+                <img class="test-rows" src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+            </div>
+            <div class="test-pin2 col-5 border-left p-0 my-2">
+                <h1>Name of person</h1>
+                <p>Their test....</p>
+            </div>
+            <div class="test-pin2 col-1 border border-right p-0 my-2">
+                <img class="test-rows" src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+            </div>
+            <div class="test-pin2 col-5 border-left p-0 my-2">
+                <h1>Name of person</h1>
+                <p>Their test....</p>
+            </div>
+            <div class="test-pin col-1 border border-right p-0 my-2">
+                <img class="test-rows" src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+            </div>
+            <div class="test-pin col-5 border-left p-0 my-2">
+                <h1>Name of person</h1>
+                <p>Their test....</p>
+            </div>
+            <div class="test-pin col-1 border border-right p-0 my-2">
+                <img class="test-rows" src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+            </div>
+            <div class="test-pin col-5 border-left p-0 my-2">
+                <h1>Name of person</h1>
+                <p>Their test....</p>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-center text-white-50 mb-4">My Contact Form</h1>
+        </div>
+        <div class="form-container">
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xdovbqdd" method="POST">
+                <label class="text-center text-white-50 mb-4">
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label class="text-center text-white-50 mb-4">
+                    Message Me:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bottom mt-auto">
+        <a class="drop-align positon-sticky bootom-20 start-50" href="https://github.com/AvSidwell"><ion-icon
+                name="logo-github"></ion-icon></a>
+        <a href=""></a>
+
+        <p class="drop-align card-footer text-body-secondary">&copy 2023 Copyright </p>
+        <p class="drop-align card-footer text-body-secondary">Created By: Sidwell</p>
+    </footer>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
