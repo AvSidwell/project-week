@@ -155,8 +155,7 @@ container {
 }
 
 body {
-    background: #aa9d9d;
-    box-shadow: 20px -20px 60px #918585,
+    background: #4C4242;
 }
 
 .bar-flow {
@@ -228,11 +227,11 @@ body {
 }
 
 .test-pin {
-    background-color: #c4b5b5;
+    background-color: #C3BACA;
 }
 
 .test-pin2 {
-    background-color: #908d8d;
+    background-color: #837C7E;
 }
 
 .test-pin:hover {
@@ -241,4 +240,8 @@ body {
 
 .test-pin2:hover {
     box-shadow: -10px -10px 30px #c4b5b5;
+}
+
+.about-text-f {
+    color: #CACFD6;
 }
