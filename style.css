@@ -1,10 +1,7 @@
 .cq1 {
-    width: 85% !important;
+    width: 100% !important;
     height: 250px !important;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: auto;
 }
 
 .cqq1 {
@@ -159,7 +156,7 @@ body {
 }
 
 .bar-flow {
-    height: 400px;
+    height: 500px;
     overflow: scroll;
 }
 
@@ -175,13 +172,14 @@ body {
     box-shadow: -20px -20px 60px #c4b5b5;
 }
 
-.connent--ers {
+.connent-ers {
     height: 50px;
 }
 
 .card-layout-f:hover {
-    box-shadow: -20px -20px 60px #614949;
+    box-shadow: -40px -40px 90px #614949;
 }
+
 
 .card-sizing-1 {
     width: 250px;
@@ -244,4 +242,43 @@ body {
 
 .about-text-f {
     color: #CACFD6;
+}
+
+
+/*@media screen and (max-width: 700px) {
+    .start-quary {
+        width: 36%;
+        margin: auto;
+        padding: 0%;
+    }
+
+    .project-quary {}
+
+
+}*/
+/*@media screen and (max-width: 400px) {
+    .end-quary {
+        width: 100%;
+        margin: auto;
+        padding: 0%;
+    }
+
+    .project-quary {}
+
+
+}*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.contact-formater {
+    width: 70%;
+    height: 500px;
+    background-color: #837C7E;
+    border-radius: 50px;
+    margin: auto;
+}
+.contact-formater1 {
+    width: 500px;
 }
