@@ -9,6 +9,11 @@
     height: 250px !important;
 }
 
+.cqq2 {
+    max-width: 100% !important;
+    height: 300px !important;
+}
+
 #head-img1 {
     width: 100% !important;
     height: auto !important;
@@ -279,6 +284,34 @@ body {
     border-radius: 50px;
     margin: auto;
 }
+
 .contact-formater1 {
     width: 500px;
+}
+
+.project-crd {
+    height: 150px !important;
+
+}
+
+.contact-hold {
+    height: 500px;
+}
+
+.tv-ider {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+    .tv-ider {
+        width: 100%;
+    }
+}
+
+
+.text-bottom-p {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
 }
