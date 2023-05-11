@@ -20,202 +20,186 @@
 
 <body>
 
-    <nav class="navbar fixed-top bg-body-tertiary border-bottom">
-        <ul class="nav">
-            <li class="nav-item" style="margin-right: 20px; height: 15px;">
-                <div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target=".menue-bar"
-                        aria-controls="menue-bar">Menu</button>
-
-                    <div class="offcanvas offcanvas-end menue-bar" tabindex="-1" aria-labelledby="menue-barLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="drop-align offcanvas-title" id="menue-barLabel">Head Of Contents</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="dropdown mt-3">
-                            <button class="tbn btn btn-secondary dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown">-HOME-</button>
-                            <ul class="tbn dropdown-menu">
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li>
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li class="drop-align">
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dropdown mt-3">
-
-                            <button class="tbn btn btn-secondary dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown">-ABOUT-</button>
-                            <ul class="tbn dropdown-menu">
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li>
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li>
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dropdown mt-3">
-                            <button class="tbn btn btn-secondary dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown">-CONTACT-</button>
-                            <ul class="tbn dropdown-menu">
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#home">A</a>
-                                </li>
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#about">A</a>
-                                </li>
-                                <li class="drop-align">
-                                    <a class="dropdown-item" href="#">A</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center" href="#home">Home</a>
+            <a class="navbar-brand text-center" href="#about">About</a>
+            <a class="navbar-brand text-center" href="#contact">Contact</a>
+            <a class="navbar-brand text-center" href="#projects">Projects</a>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                        <li><a class="dropdown-item" href="#testimonies">Testimonies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#contact">Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-center" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            <li class="nav-item">
-                <a class="text-white bg-dark nav-link active navbar-brand" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="text-white bg-dark nav-link active navbar-brand" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="text-white bg-dark nav-link active navbar-brand" href="#">CONTACT</a>
-            </li>
-
-
-            </li>
-        </ul>
-        <div class="container text-right">
-            <!--<div class="row justify-contnent-end">
-                <div class="col md-2 offset-2">
-
-                    <form class="d-flex " role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search On Page" aria-label="Search">
-                        <button class="btn ">Button</button>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                                <li><a class="dropdown-item" href="#testimonials">Testimonies</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#contact">Contact Me</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                </div>-->
-
+                </div>
+            </div>
         </div>
     </nav>
 
     <main>
-        <div>
-            <img id="head-img1" class="img-fluid" src="./Assets/Images/1.avif" alt="">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-1">
-                    <h2 class="head-animate-entry">Hi I'm </h2>
-                    <!-- <h2 class="animate_animated animate__bounce">hey</h2> -->
-                    <!--<h1 class="head-animate-1 animate__animated animate__fadeInLeft align-middle"><span
+
+        <!--Start of Landing section-->
+        <section id="home">
+            <div>
+                <img id="head-img1" class="img-fluid" src="./Assets/Images/1.avif" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <h2 class="head-animate-entry">Hi I'm </h2>
+                        <!-- <h2 class="animate_animated animate__bounce">hey</h2> -->
+                        <!--<h1 class="head-animate-1 animate__animated animate__fadeInLeft align-middle"><span
                             style="margin-left: 15px">S</span><span style="margin-left: 15px">d</span> <span
                             style="margin-left: 15px">e</span>l a y</h1>-->
-                    <h1
-                        class="head-animate-1 text-position display-2 animate__animated animate__fadeInLeft align-middle">
-                        Sidwell</h1>
-                </div>
-                <div class="col-1">
-                    <!--<h1 class="head-animate-2 animate__animated animate__fadeInRight align-middle"><span
+                        <h1
+                            class="head-animate-1 text-position display-2 animate__animated animate__fadeInLeft align-middle">
+                            Sidwell</h1>
+                    </div>
+                    <div class="col-1">
+                        <!--<h1 class="head-animate-2 animate__animated animate__fadeInRight align-middle"><span
                             style="margin-left: 15px">i</span><span style="margin-left: 15px">w</span> <span
                             style="margin-left: 15px">l</span><span style="margin-left: 15px">B</span><span
                             style="margin-left: 15px">t</span><span style="margin-left: 15px">i</span></h1>-->
-                    <h1
-                        class="head-animate-2 text-position display-2 animate__animated animate__fadeInRight align-middle">
-                        Batyi</h1>
+                        <h1
+                            class="head-animate-2 text-position display-2 animate__animated animate__fadeInRight align-middle">
+                            Batyi</h1>
 
-                </div>
-            </div>
-        </div>
-        <div class="bar-flow row p-2">
-            <h1 class="drop-align text-white-50 m-auto">My Projects</h1>
-            <div class="col-3 col-md-3 col-sm-12">
-                <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
-                    <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p1.png" alt="">
-                    <div class="card-body">
-                        <h1 class="text-position text-center display-7 card-title">Links</h1>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://github.com/AvSidwell/my-profile">GitHub</a>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://gorgeous-squirrel-76d645.netlify.app">Netlify</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3 col-md-3 col-sm-12">
-                <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
-                    <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p2.png" alt="">
-                    <div class="card-body">
-                        <h1 class="text-position text-center display-7 card-title">Links</h1>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://github.com/AvSidwell/Html-basics">GitHub</a>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://beamish-zabaione-331685.netlify.app">Netlify</a>
+        </section>
+        <section id="projects">
+            <div class="bar-flow row p-2">
+                <h1 class="drop-align text-white-50 m-auto">My Projects</h1>
+                <div class="col-12 col-md-4 col-sm-3">
+                    <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
+                        <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p1.png" alt="">
+                        <div class="card-body">
+                            <h1 class="text-position text-center display-7 card-title">Links</h1>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://github.com/AvSidwell/my-profile">GitHub</a>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://gorgeous-squirrel-76d645.netlify.app">Netlify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-3">
+                    <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
+                        <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p2.png" alt="">
+                        <div class="card-body">
+                            <h1 class="text-position text-center display-7 card-title">Links</h1>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://github.com/AvSidwell/Html-basics">GitHub</a>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://beamish-zabaione-331685.netlify.app">Netlify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-3">
+                    <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
+                        <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p3.png" alt="">
+                        <div class="card-body">
+                            <h1 class="text-position text-center display-7 card-title">Links</h1>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://github.com/AvSidwell/individual">GitHub</a>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://polite-youtiao-0243db.netlify.app">Netlify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-3">
+                    <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
+                        <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p4.png" alt="">
+                        <div class="card-body">
+                            <h1 class="text-position text-center display-7 card-title">Links</h1>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://github.com/gxotiweokuhle/groupwork">GitHub</a>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://iconnect-for-us.netlify.app/">Netlify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-3">
+                    <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
+                        <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p5.png" alt="">
+                        <div class="card-body">
+                            <h1 class="text-position text-center display-7 card-title">Links</h1>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://github.com/AvSidwell/Streaming-webpage">Github</a>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://jolly-semifreddo-0b84d1.netlify.app">Netlify</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-3">
+                    <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
+                        <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p6.png" alt="">
+                        <div class="card-body">
+                            <h1 class="text-position text-center display-7 card-title">Links</h1>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://github.com/AvSidwell/CV">GitHub</a>
+                            <a class="tp-button btn btn-dark" target="_blank"
+                                href="https://vocal-gumdrop-cb2f20.netlify.app">Netlify</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 col-md-3 col-sm-12">
-                <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
-                    <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p3.png" alt="">
-                    <div class="card-body">
-                        <h1 class="text-position text-center display-7 card-title">Links</h1>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://github.com/AvSidwell/individual">GitHub</a>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://polite-youtiao-0243db.netlify.app">Netlify</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 col-md-3 col-sm-12">
-                <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
-                    <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p4.png" alt="">
-                    <div class="card-body">
-                        <h1 class="text-position text-center display-7 card-title">Links</h1>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://github.com/gxotiweokuhle/groupwork">GitHub</a>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://iconnect-for-us.netlify.app/">Netlify</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 col-md-6 col-sm-12">
-                <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
-                    <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p5.png" alt="">
-                    <div class="card-body">
-                        <h1 class="text-position text-center display-7 card-title">Links</h1>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://github.com/AvSidwell/Streaming-webpage">Github</a>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://jolly-semifreddo-0b84d1.netlify.app">Netlify</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 col-md-6 col-sm-12">
-                <div class="start-quary card-layout-f mt-2 mb-2 card bg-secondary end-quary">
-                    <img class="cq1 img-thumbnail card-img-top" src="./Assets/Images/p6.png" alt="">
-                    <div class="card-body">
-                        <h1 class="text-position text-center display-7 card-title">Links</h1>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://github.com/AvSidwell/CV">GitHub</a>
-                        <a class="tp-button btn btn-dark" target="_blank"
-                            href="https://vocal-gumdrop-cb2f20.netlify.app">Netlify</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!--End of Landing Section-->
     </main>
-
-    <section class="border border-bottom">
-        <div class="container">
+    <!--Start of About Section-->
+    <section class="border border-bottom" id="about">
+        <div class="container m-auto">
             <div class=" row">
-                <div class="col-7">
+                <div class="col-12 col-md-7 col-sm-7">
                     <h1 class="drop-align text-white-50 mb-4 animator1">ABOUT ME</h1>
                     <p class="about-text-f mx-auto p-2 align-middle text-center">My full name is <b>Sidwell Avuyile
                             Batyi</b> An I am
@@ -238,14 +222,14 @@
                         possible.
                     </p>
                 </div>
-                <div class="col-5 p-3 mb-2 bg-transparent text-white">
+                <div class="col-12 col-md-5 col-sm-5 p-3 mb-2 bg-transparent text-white">
                     <div class="container text-center">
                         <div class="rower-1 row">
                             <div class="col flip-c">
                                 <div class=" flip-in">
                                     <div class="col flip-f">
                                         <img class="cqq2 img-thumbnail card-img-top"
-                                            src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="">
+                                            src="./Assets/Images/C12 C1 Sidwell Batyi (2).JPG" alt="" loading="lazy">
                                     </div>
                                     <div class="flip-b">
                                         <p class="info-center border border-black text-white">Date/Birth: 14/06/2004</p>
@@ -278,29 +262,16 @@
             </div>
         </div>
     </section>
+    <!--End of About Section-->
 
 
-
-    <section class="border border-bottom">
+    <!--Start of Testimonials Section-->
+    <section class="border border-bottom" id="testimonials">
         <h1 class="text-center text-white-50 mb-4">Testimonials</h1>
         <div class="row p-1 m-auto">
             <div class="col-3">
-                <div class="card text-bg-dark tv-ider">
-                    <img src="./Assets/Images/C12 Okuhle Gwotiwe (1).JPG" class="card-img opacity-25 project-crd"
-                        alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title animate__animated animate__backInUp text text-primary-emphasis">Okuhle
-                            Gwotiwe</h5>
-                        <p class="card-text">Sidwell is great logical thinker, pays attention to detail and isnt
-                            afraid to take risks.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row p-1 m-auto">
-            <div class="col-4">
                 <div class="card">
-                    <img src="./Assets/Images/C12 Okuhle Gwotiwe (1).JPG" alt="">
+                    <img src="./Assets/Images/C12 Okuhle Gwotiwe (1).JPG" class="p-img-s" alt="" loading="lazy">
                     <div class="card-img-overlay text-center">
                         <h5
                             class="card-title animate__animated animate__backInUp text text-primary-emphasis text-bottom-p">
@@ -308,30 +279,31 @@
                             Gwotiwe</h5>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Testimonial</h5>
+                        <h5 class="card-title">Okuhle
+                            Gwotiwe</h5>
                         <p class="card-text">Sidwell is great logical thinker, pays attention to detail and isnt afraid
                             to take risks.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <div class="card">
-                    <img src="./Assets/Images/C12 C1 Xola Bangaza (2).JPG" alt="">
+                    <img class="p-img-s"  src="./Assets/Images/C12 C1 Xola Bangaza (2).JPG" alt="" loading="lazy">
                     <div class="card-img-overlay text-center">
                         <h5
                             class="card-title animate__animated animate__backInUp text text-primary-emphasis text-bottom-p">
                             Xola Bongaza</h5>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Testimonial</h5>
+                        <h5 class="card-title">Xola Bongaza</h5>
                         <p class="card-text">Sidwell is great logical thinker, pays attention to detail and isnt afraid
                             to take risks.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <div class="card">
-                    <img src="./Assets/Images/C12 Asiphe Ndimlana (1).JPG" alt="">
+                    <img class="p-img-s" src="./Assets/Images/C12 Asiphe Ndimlana (1).JPG" alt="" loading="lazy">
                     <div class="card-img-overlay text-center">
                         <h5
                             class="card-title animate__animated animate__backInUp text text-primary-emphasis text-bottom-p">
@@ -339,7 +311,7 @@
                     </div>
 
                     <div class="card-body">
-                        <h5 class="card-title">Testimonial</h5>
+                        <h5 class="card-title">Asiphe Ndimlana</h5>
                         <p class="card-text">"As an IT professional, Sidwell embodies dedication and
                             excellence. He never fails to exceed expectations and possesses
                             a remarkable work ethic alongside unparalleled proficiency in
@@ -347,9 +319,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <div class="card">
-                    <img src="./Assets/Images/Waydin Jochem C12 C1 25Apr23 (2).JPG" alt="">
+                    <img class="p-img-s"  src="./Assets/Images/Waydin Jochem C12 C1 25Apr23 (2).JPG" alt="" loading="lazy">
+                    <div class="card-img-overlay text-center">
+                        <h5
+                            class="card-title animate__animated animate__backInUp text text-primary-emphasis text-bottom-p">
+                            Waydin Jochem</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Waydin Jochem</h5>
+                        <p class="card-text">Sidwell is a vibrant and charismatic individual, who oftentimes finds
+                            himself taking a lead role in team-based assignments. He expresses himself boldly and is
+                            always readily available to take one a new challenge.</p>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="col-3 clone-top">
+                <div class="card ">
+                    <img src="./Assets/Images/Waydin Jochem C12 C1 25Apr23 (2).JPG" alt="" loading="lazy">
                     <div class="card-img-overlay text-center">
                         <h5
                             class="card-title animate__animated animate__backInUp text text-primary-emphasis text-bottom-p">
@@ -363,61 +352,32 @@
                             always readily available to take one a new challenge.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./Assets/Images/Waydin Jochem C12 C1 25Apr23 (2).JPG" alt="">
-                    <div class="card-img-overlay text-center">
-                        <h5
-                            class="card-title animate__animated animate__backInUp text text-primary-emphasis text-bottom-p">
-                            Waydin Jochem</h5>
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Testimonial</h5>
-                        <p class="card-text">Sidwell is a vibrant and charismatic individual, who oftentimes finds
-                            himself taking a lead role in team-based assignments. He expresses himself boldly and is
-                            always readily available to take one a new challenge.</p>
-                    </div>
-                </div>
-            </div>
+            </div>-->
         </div>
         <div>
-            <h1 class="text-center text-white-50 mb-4">My Contact Form</h1>
+    </section>
+    <!--End of Testimonials Section-->
+    <!--Start of Content Section-->
+    <section id="contact">
+        <h1 class="text-center text-white-50 mb-4">My Contact Form</h1>
         </div>
-        <div class="form-container text-center contact-formater align-items-center p-4">
-            <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/xdovbqdd" method="POST">
-                <div class=" my-4">
-                    <label class="text-center text-white-50 mb-4">
-                        Your email:
-                        <input type="email" name="email" type="text" placeholder="Enter your email">
-                    </label>
-                </div>
-                <label class="text-center text-white-50 mb-4">
-                    Message Me:
-                    <textarea name="message"></textarea>
-                </label>
-                <!-- your other form fields go here -->
-                <button type="submit" class="tp-button btn btn-dark" style="width: 200px;">Send</button>
-            </form>
-        </div>
-        <div class="container text-center my-4 bg-secondary contact-hold">
+
+        <div class="container text-center my-4 bg-secondary contact-hold p-4">
             <form action="https://formspree.io/f/xdovbqdd" method="POST">
 
                 <!--<form action="https://formspree.io/f/xdovbqdd" method="POST"></form>-->
-                <fieldset disabled>
-                    <legend class="my-5">Contact Me</legend>
+                <fieldset>
+                    <legend class="my-2">Contact</legend>
                     <div class="mb-3 mx-3 my-5">
-                        <label for="disabledTextInput" class="form-label">Enter your email:</label>
+                        <label for="disabledTextInput" class="form-label mb-4">Enter your email:</label>
                         <input type="email" id="disabledTextInput" class="form-control"
                             placeholder="Eg emailaddress.@gmail.com">
                     </div>
-                    <div class="mb-3 mx-3 my-5">
-                        <label for="disabledSelect" class="form-label">Message Me</label>
-                        <select id="disabledSelect" class="form-select">
-                            <option>Your message</option>
-                        </select>
+                    <legend class="my-2">Message</legend>
+                    <div class="form-floating">
+                        <textarea class="form-control mb-4" placeholder="Enter message here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary my-3">Submit</button>
                 </fieldset>
@@ -425,34 +385,23 @@
 
         </div>
 
-        <div class="container">
-                <h1 class="my-5">Contact Me</h1>
-            <form action="https://formspree.io/f/xbjeblad" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="email">
-                    </label>
-                    <label>
-                        Your message:
-                        <textarea name="message"></textarea>
-                    </label>
-                <div class="mb-3 mx-3 my-5"></div>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
 
-        </div>
-        </form>
         </div>
     </section>
 
-    <footer class="bottom mt-auto">
-        <a class="drop-align positon-sticky bootom-20 start-50" target="_blank"
-            href="https://github.com/AvSidwell"><ion-icon name="logo-github"></ion-icon></a>
-        <a href=""></a>
+    <!--End of Contact Section-->
+    <!--Sart of Footer-->
+    <section>
+        <footer class="bottom mt-auto">
+            <a class=" positon-sticky bottom-20 end-100" target="_blank" href="https://github.com/AvSidwell"><ion-icon
+                    name="logo-github"></ion-icon></a>
+            <a href=""></a>
 
-        <p class="drop-align card-footer text-body-secondary">&copy 2023 Copyright </p>
-        <p class="drop-align card-footer text-body-secondary">Created By: Sidwell</p>
-    </footer>
+            <p class="drop-align card-footer text-body-secondary">&copy 2023 Copyright </p>
+            <p class="drop-align card-footer text-body-secondary">Created By: Sidwell</p>
+        </footer>
+    </section>
+    <!--End of Footer-->
 
 
 

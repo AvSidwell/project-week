@@ -160,11 +160,6 @@ body {
     background: #4C4242;
 }
 
-.bar-flow {
-    height: 500px;
-    overflow: scroll;
-}
-
 .web-links {
     color: white;
     border-radius: 50px;
@@ -314,4 +309,19 @@ body {
     position: relative;
     bottom: 0px;
     left: 0px;
+}
+
+.p-img-s {
+    height: 300px;
+}
+
+@media (max-width: 1200px) {
+    .head-animate-2 {
+        top: 170px;
+        left: 50%;
+    }
+    .head-animate-1 {
+        top: 100px;
+        left: 47%;
+    }
 }
