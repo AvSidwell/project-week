@@ -320,18 +320,8 @@ body {
         top: 170px;
         left: 50%;
     }
-
     .head-animate-1 {
         top: 100px;
         left: 47%;
     }
 }
-
-.typo-i {
-    position: absolute !important;
-}
-
-.mnee {
-    background: cornflowerblue !important;
-}
-
