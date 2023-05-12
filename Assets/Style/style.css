@@ -1,3 +1,21 @@
+.navbar {
+    height: 70px;
+}
+
+.navDesktop {
+    width: 100%;
+}
+
+.navMobile {
+    display: none;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .cq1 {
     width: 100% !important;
     height: 250px !important;
@@ -70,7 +88,7 @@
     color: white !important;
 }
 
-.drop-align {
+/* .drop-align {
     text-align: center;
 }
 
@@ -80,11 +98,11 @@
 
 .off-canvas-align {
     text-align: end;
-}
+} */
 
-.tbn {
-    width: 100%;
-}
+    .tbn {
+        width: 100%;
+    }
 
 .animator1 {
     animation-name: animate;
@@ -320,8 +338,28 @@ body {
         top: 170px;
         left: 50%;
     }
+
     .head-animate-1 {
         top: 100px;
         left: 47%;
     }
 }
+
+.typo-i {
+    position: absolute !important;
+}
+.navbar .container-fluid .navbar-nav li.dropdown{
+    width: 20%;
+}
+
+
+@media screen and (max-width: 576px) {
+    .navMobile {
+        display: block;
+    }
+
+    .navDesktop {
+        display: none;
+    }
+}
+
