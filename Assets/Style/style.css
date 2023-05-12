@@ -323,6 +323,10 @@ body {
 }
 
 
+
+.boil{
+    width: 23rem;
+}
 .text-bottom-p {
     position: relative;
     bottom: 10px;
@@ -344,6 +348,8 @@ body {
         left: 47%;
     }
 }
+
+
 
 .typo-i {
     position: absolute !important;
